@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw # this is the source_name !! this is what you refer to 
+    description: My created database from snowflake
+    database: DEMO_DB
+    schema: DEMO
+    # Referening My Raw Tables In Snowflake before any transformation - goal is just to get to the source
+    tables: 
+      - name: CLAIM 
+      - name: USERS 
+      - name: UTILIZATION
+      - name: COMPANY 
